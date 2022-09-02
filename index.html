@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <title>Login and Register Project </title>
+
+
+</head>
+<body>
+
+    <div class="container">
+
+                                        <!--Login-->
+        <form class="form" id="login">
+            <h1 class="formTitle">Login</h1>
+            <div class="formMessage formMessage--error"></div>
+            <div class="formInputGroup">
+                <input id="se" type="text" class="formInput" autofocus placeholder="Username or email">
+                <div class="formInput-error-message"></div>
+            </div>
+            <div class="formInputGroup">
+                <input id="sp" type="password" class="formInput" autofocus placeholder="Password">
+                <div class="formInput-error-message"></div>
+            </div>
+            <button class="formButton" type="submit" onclick="login()">Login</button>
+            <p class="formText">
+                <a href="#" class="formLink">Forgot your password?</a>
+            </p>
+            <p class="formText">
+                <a class="formLink" href=".\" id="linkCreateAccount">Create an account</a>
+            </p>
+        </form>
+
+                                        <!--Register-->
+        <form class="form--hidden" id="createAccount">
+            <h1 class="formTitle">Create Account</h1>
+            <div class="formMessage formMessage--error"></div>
+            <!--   
+                USERNAME INPUT MYB
+            <div class="formInputGroup">
+                <input type="text" class="formInput" autofocus placeholder="">
+                <div class="formInput-error-message"></div>
+            </div>   
+            -->
+            <div class="formInputGroup">
+                <input id="re" type="text" class="formInput" autofocus placeholder="Email Address">
+                <div class="formInput-error-message"></div>
+            </div>
+            <div class="formInputGroup">
+                <input id="rp" type="password" class="formInput" autofocus placeholder="Password">
+                <div class="formInput-error-message"></div>
+            </div>
+            <div class="formInputGroup">
+                <input id="rrp" type="password" class="formInput" autofocus placeholder="Confirm Password">
+                <div class="formInput-error-message"></div>
+            </div>
+            <button class="formButton" type="submit" onclick="register()">Register</button>
+            <p class="formText">
+                <a class="formLink" href="#login" id="linkLogin">Have an account? Sign in</a>
+            </p>
+        </form>
+                                <!--Forgot Password u buducnosti napravit-->
+
+
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
